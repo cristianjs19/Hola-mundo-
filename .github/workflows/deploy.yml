@@ -12,8 +12,8 @@ jobs:
     
     - name: Debug secrets
       run: |
-        echo "EC2_HOST: ${{ vars.EC2_HOST != '' }}"
-        echo "EC2_USER: ${{ vars.EC2_USER != '' }}"
+        echo "EC2_HOST: ${{ vars.EC2_HOST }}"
+        echo "EC2_USER: ${{ vars.EC2_USER }}"
     
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
