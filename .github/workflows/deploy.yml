@@ -23,6 +23,6 @@ jobs:
         username: ${{ vars.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd /home/ubuntu/projects/hola-mundo
+          cd /root/projects/hola-mundo
           git remote set-url origin "https://${{ secrets.EC2_GH_TOKEN }}@github.com/cristianjs19/Hola-mundo-.git"
           git pull origin master
